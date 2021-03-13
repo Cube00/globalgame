@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "ubuntu-bold";
+    src: url("../fonts/UbuntuMono-Bold.eot");
+    /* IE9 Compat Modes */
+    src: url("../fonts/UbuntuMono-Bold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/UbuntuMono-Bold.woff2") format("woff2"), /* Super Modern Browsers */
+    url("../fonts/UbuntuMono-Bold.woff") format("woff"), /* Pretty Modern Browsers */
+    url("../fonts/UbuntuMono-Bold.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/UbuntuMono-Bold.svg#UbuntuMono-Bold") format("svg");
+    /* Legacy iOS */
+}
+
+@font-face {
+    font-family: "ubuntu-regular";
+    src: url("../fonts/UbuntuMono-Regular.eot");
+    /* IE9 Compat Modes */
+    src: url("../fonts/UbuntuMono-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/UbuntuMono-Regular.woff2") format("woff2"), /* Super Modern Browsers */
+    url("../fonts/UbuntuMono-Regular.woff") format("woff"), /* Pretty Modern Browsers */
+    url("../fonts/UbuntuMono-Regular.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/UbuntuMono-Regular.svg#UbuntuMono-Regular") format("svg");
+    /* Legacy iOS */
+}
+
+@font-face {
+    font-family: "oswald-regular";
+    src: url("../fonts/Oswald-Regular.eot");
+    /* IE9 Compat Modes */
+    src: url("../fonts/Oswald-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/Oswald-Regular.woff2") format("woff2"), /* Super Modern Browsers */
+    url("../fonts/Oswald-Regular.woff") format("woff"), /* Pretty Modern Browsers */
+    url("../fonts/Oswald-Regular.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/Oswald-Regular.svg#Oswald-Regular") format("svg");
+    /* Legacy iOS */
+}
