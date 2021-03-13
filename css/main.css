@@ -10,7 +10,7 @@ body {
 
 .header-container {
     position: relative;
-    max-width: 95%;
+    max-width: 98%;
     width: 100%;
     background-color: #0b0b0b;
     overflow: hidden;
@@ -167,6 +167,19 @@ header {
 
 /*slider*/
 
+.item-slider {
+    display: none;
+}
+
+.active-slider {
+    display: block;
+    height: 100%;
+}
+
+.active-slider img {
+    object-fit: cover;
+}
+
 .slider-wall {
     position: relative;
     height: 650px;
@@ -175,6 +188,9 @@ header {
 
 .slider-image {
     width: 100%;
+    object-fit: cover;
+    height: 100%;
+    animation: imageAnime 22s infinite alternate;
 }
 
 .slider-content {
@@ -183,6 +199,7 @@ header {
     width: 100%;
     right: 10%;
     bottom: 44%;
+    animation: slider 0.5s;
 }
 
 .slider-content h2 {
@@ -204,6 +221,7 @@ header {
     width: 100%;
     right: 10%;
     top: 85%;
+    animation: sliderUp 0.5s;
 }
 
 .slider-info span {
@@ -224,6 +242,7 @@ header {
     width: 100%;
     right: 10%;
     top: 65%;
+    animation: sliderUp 0.5s;
 }
 
 .play {
@@ -253,6 +272,168 @@ header {
     border-radius: 60px;
     outline: none;
     cursor: pointer;
+}
+
+.pagination-slider {
+    position: absolute;
+    bottom: 30px;
+    right: 10%;
+}
+
+.paginations {
+    float: left;
+}
+
+.pag {
+    float: left;
+    margin: 15px;
+    width: 5px;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.pag:hover {
+    transition: 0.9s;
+}
+
+.pag:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-51%);
+    margin-left: -5.5px;
+    width: 5px;
+    height: 5px;
+    padding: 5px;
+    border-radius: 50%;
+    background: none;
+    border: 1px solid transparent;
+    transition: 0.5s;
+}
+
+.pag:hover:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-51%);
+    margin-left: -5.5px;
+    width: 5px;
+    height: 5px;
+    padding: 5px;
+    border-radius: 50%;
+    background: none;
+    border: 1px solid #ffc300;
+}
+
+.active-pagination:after {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-51%);
+    margin-left: -5.5px;
+    width: 5px;
+    height: 5px;
+    padding: 5px;
+    border-radius: 50%;
+    background: none;
+    border: 1px solid #ffc300;
+}
+
+@keyframes slider {
+    0% {
+        animation-delay: 0.3s;
+        animation-direction: alternate;
+        transform: translateX(100%);
+    }
+    10% {
+        animation-delay: 0.3s;
+        animation-direction: alternate;
+        transform: translateX(90%);
+    }
+    20% {
+        animation-delay: 0.3s;
+        animation-direction: alternate;
+        transform: translateX(80%);
+    }
+    30% {
+        animation-delay: 0.3s;
+        animation-direction: alternate;
+        transform: translateX(70%);
+    }
+    40% {
+        animation-delay: 0.3s;
+        animation-direction: alternate;
+        transform: translateX(60%);
+    }
+    50% {
+        animation-delay: 0.3s;
+        animation-direction: alternate;
+        transform: translateX(50%);
+    }
+    60% {
+        animation-delay: 0.3s;
+        animation-direction: alternate;
+        transform: translateX(40%);
+    }
+    100% {
+        animation-delay: 0.3s;
+        animation-direction: alternate;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes sliderUp {
+    0% {
+        animation-delay: 0.3s;
+        animation-direction: alternate;
+        transform: translateY(100%);
+    }
+    10% {
+        animation-delay: 0.3s;
+        animation-direction: alternate;
+        transform: translateY(90%);
+    }
+    20% {
+        animation-delay: 0.3s;
+        animation-direction: alternate;
+        transform: translateY(80%);
+    }
+    30% {
+        animation-delay: 0.3s;
+        animation-direction: alternate;
+        transform: translateY(70%);
+    }
+    40% {
+        animation-delay: 0.3s;
+        animation-direction: alternate;
+        transform: translateY(60%);
+    }
+    50% {
+        animation-delay: 0.3s;
+        animation-direction: alternate;
+        transform: translateY(50%);
+    }
+    60% {
+        animation-delay: 0.3s;
+        animation-direction: alternate;
+        transform: translateY(40%);
+    }
+    100% {
+        animation-delay: 0.3s;
+        animation-direction: alternate;
+        transform: translateY(0%);
+    }
+}
+
+@keyframes imageAnime {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.3);
+    }
 }
 
 
