@@ -6,12 +6,14 @@
 
 body {
     background-color: #0b0b0b;
+    overflow-x: hidden;
 }
 
 .header-container {
     position: relative;
     max-width: 98%;
     width: 100%;
+    min-height: 100vh;
     background-color: #0b0b0b;
     overflow: hidden;
     border-bottom-right-radius: 10px;
@@ -61,6 +63,11 @@ header {
     font-family: "ubuntu-regular";
     color: #cccccd;
     text-decoration: none;
+    transition-duration: 0.4s;
+}
+
+.header-nav ul li a:hover {
+    color: #fff;
 }
 
 .page-language {
@@ -183,6 +190,7 @@ header {
 .slider-wall {
     position: relative;
     height: 650px;
+    min-height: 100vh;
     overflow: hidden;
 }
 
@@ -448,6 +456,11 @@ header {
 .preview img {
     width: 110%;
     min-height: 150px;
+    transition-duration: 0.6s;
+}
+
+.preview:hover img {
+    transform: scale(1.2);
 }
 
 .preview h2 {
@@ -458,4 +471,165 @@ header {
     font-size: 16px;
     font-family: "ubuntu-regular";
     color: #fff;
+    transition-duration: 0.6s;
+}
+
+.preview:hover h2 {
+    transform: translateY(-10px);
+}
+
+
+/*main-content*/
+
+.main-content {
+    position: relative;
+}
+
+.main-content:before {
+    content: "";
+    position: absolute;
+    top: 200px;
+    left: -50px;
+    width: 159px;
+    height: 175px;
+    background-image: url("../images/bg-tool.png");
+}
+
+.main-content:after {
+    content: "";
+    position: absolute;
+    top: 390px;
+    right: 0;
+    margin-right: -40px;
+    width: 159px;
+    height: 175px;
+    background-image: url("../images/bg-tool.png");
+    transform: rotate(70deg);
+}
+
+.content-wall {
+    position: absolute;
+    max-width: 1190px;
+    width: 100%;
+    right: 2%;
+    padding: 10px 0px;
+}
+
+.game-block {
+    margin: 90px 0 120px;
+}
+
+.block-headings {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 37px;
+}
+
+.t-f {
+    display: flex;
+    align-items: center;
+}
+
+.block-title {
+    float: left;
+    font-size: 36px;
+    font-family: "ubuntu-bold";
+    color: #fff;
+}
+
+.block-filter-cats {
+    float: left;
+    margin-top: 5px;
+    margin-left: 25px;
+}
+
+.block-filter-cats span {
+    margin-right: 20px;
+    font-size: 18px;
+    font-family: "ubuntu-regular";
+    color: #fff;
+    opacity: 0.51;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.block-filter-cats span:hover {
+    color: #e5d430;
+    opacity: 1;
+}
+
+.prew {
+    float: left;
+    display: flex;
+    justify-content: center;
+    margin-right: 20px;
+    width: 50px;
+    height: 50px;
+    outline: none;
+    border: 2px solid#a9a9a9;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.prew img {
+    width: 30px;
+    filter: invert(86%) sepia(0%) saturate(3183%) hue-rotate(18deg) brightness(74%) contrast(117%);
+}
+
+.next {
+    float: left;
+    display: flex;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    outline: none;
+    border: 2px solid#fbe61b;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.next img {
+    width: 30px;
+    transform: rotate(180deg);
+    filter: invert(94%) sepia(43%) saturate(4203%) hue-rotate(339deg) brightness(102%) contrast(97%);
+    outline: none;
+}
+
+.game-swiper {
+    overflow: hidden;
+}
+
+.game {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.game img {
+    width: 100%;
+    height: 300px;
+}
+
+.game:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0px;
+    left: 0;
+    box-shadow: 0px -50px 40px 1px black inset;
+}
+
+.game h2 {
+    position: absolute;
+    bottom: 20px;
+    margin-left: 20px;
+    font-family: "ubuntu-bold";
+    font-size: 24px;
+    color: #fff;
+    z-index: 1;
 }
