@@ -30,9 +30,11 @@ body {
 header {
     position: absolute;
     z-index: 2;
-    max-width: 1050px;
+    max-width: 1190px;
     width: 100%;
-    right: 10%;
+    /* right: 10%; */
+    left: 50%;
+    transform: translate(-50%);
     padding: 10px 0px;
 }
 
@@ -185,6 +187,7 @@ header {
 /*slider*/
 
 .item-slider {
+    position: relative;
     display: none;
 }
 
@@ -211,11 +214,20 @@ header {
     animation: imageAnime 22s infinite alternate;
 }
 
+.content-position {
+    position: absolute;
+    max-width: 1190px;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    height: 100%;
+    bottom: 0%;
+}
+
 .slider-content {
     position: absolute;
     max-width: 1050px;
     width: 100%;
-    right: 10%;
     bottom: 44%;
     animation: slider 0.5s;
 }
@@ -237,7 +249,6 @@ header {
     position: absolute;
     max-width: 1050px;
     width: 100%;
-    right: 10%;
     top: 85%;
     animation: sliderUp 0.5s;
 }
@@ -258,7 +269,6 @@ header {
     position: absolute;
     max-width: 1050px;
     width: 100%;
-    right: 10%;
     top: 65%;
     animation: sliderUp 0.5s;
 }
@@ -295,7 +305,7 @@ header {
 .pagination-slider {
     position: absolute;
     bottom: 30px;
-    right: 10%;
+    right: 5%;
 }
 
 .paginations {
@@ -303,10 +313,11 @@ header {
 }
 
 .pag {
+    position: relative;
     float: left;
-    margin: 15px;
-    width: 5px;
-    height: 5px;
+    margin: 10px;
+    width: 8px;
+    height: 8px;
     background-color: #fff;
     border-radius: 50%;
     cursor: pointer;
@@ -315,49 +326,50 @@ header {
 
 .pag:hover {
     transition: 0.9s;
+    background-color: #ffc300;
 }
 
-.pag:after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    transform: translateY(-51%);
-    margin-left: -5.5px;
-    width: 5px;
-    height: 5px;
-    padding: 5px;
-    border-radius: 50%;
-    background: none;
-    border: 1px solid transparent;
-    transition: 0.5s;
+.active-pagination {
+    background-color: #ffc300;
+}
+
+
+/* .pag:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 4px;
+  height: 4px;
+  padding: 5px;
+  border-radius: 50%;
+  background: none;
+  border: 1px solid transparent;
+  transition: 0.5s;
 }
 
 .pag:hover:after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    transform: translateY(-51%);
-    margin-left: -5.5px;
-    width: 5px;
-    height: 5px;
-    padding: 5px;
-    border-radius: 50%;
-    background: none;
-    border: 1px solid #ffc300;
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: none;
+  border: 1px solid #ffc300;
 }
 
 .active-pagination:after {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-51%);
-    margin-left: -5.5px;
-    width: 5px;
-    height: 5px;
-    padding: 5px;
-    border-radius: 50%;
-    background: none;
-    border: 1px solid #ffc300;
-}
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: none;
+  border: 1px solid #ffc300;
+} */
 
 @keyframes slider {
     0% {
@@ -521,12 +533,14 @@ header {
     position: absolute;
     max-width: 1190px;
     width: 100%;
-    right: 2%;
+    left: 50%;
+    transform: translate(-50%);
     padding: 10px 0px;
 }
 
 .game-block {
     margin: 90px 0 120px;
+    overflow: hidden;
 }
 
 .block-headings {
@@ -707,7 +721,7 @@ header {
 .second-child-news {
     display: flex;
     flex-wrap: wrap;
-    width: 76.5%;
+    width: 77.5%;
     margin-left: -15px;
 }
 
@@ -769,4 +783,69 @@ header {
     filter: invert(97%) sepia(14%) saturate(299%) hue-rotate(217deg) brightness(119%) contrast(100%);
     margin-right: 15px;
     margin-top: 2.5px;
+}
+
+.topgame {
+    display: block;
+    float: left;
+    width: 20%;
+}
+
+.topGame-swiper {
+    width: 80%;
+    overflow: hidden;
+    float: right;
+    padding-bottom: 56px;
+}
+
+.topgame-title {
+    display: block;
+    float: none;
+}
+
+.t-t {
+    display: block;
+}
+
+.topgame-arrows {
+    margin-top: 90px;
+}
+
+.block-description {
+    margin-top: 30px;
+    margin-right: 20px;
+    font-size: 20px;
+    font-family: "ubuntu-bold";
+    color: rgb(173, 173, 173);
+}
+
+.topgame-pagination {
+    margin-top: 30px;
+}
+
+.swiper-pagination-bullet {
+    margin: 0 15px !important;
+    width: 5px;
+    height: 5px;
+    background: #fff;
+    opacity: 1;
+    outline: none;
+}
+
+.swiper-pagination-bullet-active {
+    position: relative;
+    padding: 2px;
+    background: #fbe61b;
+}
+
+.swiper-pagination-bullet-active:after {
+    content: "";
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: 2px solid#fbe61b;
 }
