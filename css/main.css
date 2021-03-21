@@ -274,6 +274,7 @@ header {
 }
 
 .play {
+    position: relative;
     margin-right: 20px;
     width: 147px;
     height: 46px;
@@ -286,6 +287,30 @@ header {
     border: none;
     outline: none;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.play:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1px solid transparent;
+    padding: 5px;
+    margin-left: -5px;
+    margin-top: -5px;
+    top: 0;
+    left: 0;
+    border-radius: 60px;
+    transition: 0.3s all ease-in;
+}
+
+.play:hover {
+    transform: scale(0.9);
+}
+
+.play:hover:after {
+    border: 1px solid #ffc300;
 }
 
 .read {
@@ -300,6 +325,12 @@ header {
     border-radius: 60px;
     outline: none;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.read:hover {
+    background-color: #fff;
+    color: black;
 }
 
 .pagination-slider {
@@ -530,17 +561,19 @@ header {
 }
 
 .content-wall {
-    position: absolute;
     max-width: 1190px;
     width: 100%;
-    left: 50%;
-    transform: translate(-50%);
+    margin: auto;
     padding: 10px 0px;
 }
 
 .game-block {
     margin: 90px 0 120px;
     overflow: hidden;
+}
+
+.game-block:last-child {
+    margin-bottom: 70px;
 }
 
 .block-headings {
@@ -844,8 +877,181 @@ header {
     width: 17px;
     height: 17px;
     top: 50%;
-    left: 50%;
+    left: 49%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
     border: 2px solid#fbe61b;
+}
+
+.subscribe {
+    background: url("../images/cover-subscribe.png");
+    overflow: hidden;
+    background-size: cover;
+    height: 556px;
+}
+
+.subscribe-form {
+    max-width: 1190px;
+    width: 100%;
+    margin: auto;
+    margin-top: 200px;
+}
+
+.form-s {
+    width: 40%;
+    float: right;
+}
+
+.form-s h2 {
+    font-family: "ubuntu-bold";
+    font-size: 48px;
+    color: #ffffff;
+}
+
+.sub-input {
+    margin-top: 30px;
+    width: 90%;
+    padding: 10px;
+    font-size: 24px;
+    font-family: "ubuntu-regular";
+    color: #fff;
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid#fff;
+}
+
+.sub-input::placeholder {
+    color: #fff;
+}
+
+.send-subscribe {
+    float: right;
+    margin-top: -35px;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    outline: none;
+    border-radius: 50%;
+    border: none;
+}
+
+.send-subscribe img {
+    transform: rotate(180deg);
+    width: 40px;
+}
+
+
+/*footer*/
+
+footer {
+    margin-top: 50px;
+}
+
+.sec-1-footer,
+.sec-2-footer {
+    max-width: 1190px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ft-sc-1 {
+    width: 25%;
+}
+
+.ft-sc-1 h2 {
+    font-size: 24px;
+    font-family: "ubuntu-bold";
+    color: #c7c7c7;
+}
+
+.social {
+    margin-top: 15px;
+}
+
+.social span {
+    margin-right: 20px;
+    float: left;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 50%;
+    border: 1px solid#848484;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+.social span img {
+    filter: invert(50%) sepia(2%) saturate(0%) hue-rotate(135deg) brightness(102%) contrast(98%);
+    transition-duration: 0.3s;
+}
+
+.social span:hover {
+    border: 1px solid#fff;
+}
+
+.social span:hover img {
+    filter: none;
+}
+
+.ft-sc-2 {
+    width: 40%;
+    font-size: 20px;
+    font-family: "ubuntu-bold";
+    color: #6b6b6b;
+}
+
+.ft-sc-3 {
+    font-size: 24px;
+    font-family: "ubuntu-bold";
+    color: #a4a4a4;
+}
+
+.ft-sc-3 img {
+    float: right;
+    width: 20px;
+    margin: 3px;
+    transform: rotate(270deg);
+    filter: invert(97%) sepia(14%) saturate(299%) hue-rotate(217deg) brightness(119%) contrast(100%);
+}
+
+.ft-sc-4 ul li {
+    margin-bottom: 3px;
+}
+
+.ft-sc-4 ul li a {
+    font-size: 24px;
+    font-family: "ubuntu-bold";
+    color: #fff;
+    opacity: 0.8;
+    text-decoration: none;
+    transition-duration: 0.3s;
+}
+
+.ft-sc-4 ul li a:hover {
+    opacity: 1;
+}
+
+.sec-2-footer {
+    margin-top: 40px;
+    border-top: 1px solid#161616;
+    padding-top: 20px;
+    margin-bottom: 25px;
+}
+
+.m-p {
+    font-size: 20px;
+    font-family: "ubuntu-bold";
+    color: #fff;
+}
+
+.powered {
+    font-size: 20px;
+    font-family: "ubuntu-bold";
+    color: #353535;
 }
