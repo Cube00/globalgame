@@ -50,6 +50,10 @@ header {
     align-items: center;
 }
 
+.burger-menu {
+    display: none;
+}
+
 .logo span {
     font-size: 24px;
     font-family: "oswald-regular";
@@ -536,6 +540,7 @@ header {
 
 .main-content {
     position: relative;
+    overflow-x: hidden;
 }
 
 .main-content:before {
@@ -570,10 +575,6 @@ header {
 .game-block {
     margin: 90px 0 120px;
     overflow: hidden;
-}
-
-.game-block:last-child {
-    margin-bottom: 70px;
 }
 
 .block-headings {
@@ -685,6 +686,7 @@ header {
     position: absolute;
     bottom: 20px;
     margin-left: 20px;
+    margin-right: 20px;
     font-family: "ubuntu-bold";
     font-size: 24px;
     color: #fff;
