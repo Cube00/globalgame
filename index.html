@@ -488,16 +488,98 @@
         </div>
     </section>
 
-    <!-- <section class="subscribe">
-        <div class="subscribe-form">
-            <div class="form-s">
-                <h2>SUBSCRIBE AND GET INFORMATION
-                </h2>
-                <input type="text" class="sub-input" name="subscribe" id="subscribe" placeholder="Enter your email">
-                <button class="send-subscribe"><img src="images/arrow.svg" alt=""></button>
+    <section class="store">
+        <div class="store-panel">
+            <div class="store-logo">
+                <img src="images/shopping-logo.png" alt="">
+            </div>
+            <div class="store-search">
+                <button class="store-search-btn" aria-label="search button"><img src="images/search-btn.png" alt=""></button>
+                <input type="text" class="store-search-input" id="store-search" placeholder='Search games and more' autocomplete="off">
+            </div>
+            <div class="store-categories">
+                <div class="store-cat">
+                    <h2>Store</h2>
+                    <div class="sub-cat">
+                        <li class="sub-cat-li" id="span-1">
+                            Browse games
+                            <img src="images/arrow.svg" alt="">
+                        </li>
+                        <span class="sub-cat-span" id="span-1">
+                            <li>
+                                <a href="">
+                                    EA games
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Steam
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    other
+                                </a>
+                            </li>
+                        </span>
+                    </div>
+                    <div class="sub-cat">
+                        <li class="sub-cat-li" id="span-2">
+                            Details
+                            <img src="images/arrow.svg" alt="">
+                        </li>
+                        <span class="sub-cat-span" id="span-2">
+                            <li>
+                                <a href="">
+                                    on sale
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    under $10
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    $10- $20
+                                </a>
+                            </li>
+                        </span>
+                    </div>
+                </div>
+                <div class="extra-cat">
+                    <a href="">
+                        Consoles <img src="images/arrow.svg" alt="" />
+                    </a>
+                </div>
+                <div class="extra-cat">
+                    <a href="">
+                        Gaming clients <img src="images/arrow.svg" alt="" />
+                    </a>
+                </div>
+            </div>
+            <div class="store-footer">
+                <ul>
+                    <li>
+                        <a href="">About</a>
+                    </li>
+                    <li>
+                        <a href="">Download</a>
+                    </li>
+                    <li>
+                        <a href="">Help</a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </section> -->
+        <div class="store-content">
+            <div class="section-1-store">
+                <div class="title-sec-store">
+                    <h2>On sale <span>View all</span></h2>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer>
         <div class="sec-1-footer">
@@ -546,6 +628,22 @@
 
     <script src="js/control.js"></script>
     <script src="js/slider.js"></script>
+    <script>
+        const list = document.querySelectorAll('.sub-cat-li');
+        const sp = document.querySelectorAll('.sub-cat-span');
+        list.forEach((e) => {
+            e.addEventListener('click', () => {
+                sp.forEach((z) => {
+                    if (e.id === z.id) {
+                        z.classList.toggle('active-span');
+                    }
+                    if (e.id !== z.id) {
+                        z.classList.remove('active-span');
+                    }
+                })
+            })
+        })
+    </script>
 </body>
 
 </html>
