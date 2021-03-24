@@ -489,93 +489,412 @@
     </section>
 
     <section class="store">
-        <div class="store-panel">
-            <div class="store-logo">
-                <img src="images/shopping-logo.png" alt="">
-            </div>
-            <div class="store-search">
-                <button class="store-search-btn" aria-label="search button"><img src="images/search-btn.png" alt=""></button>
-                <input type="text" class="store-search-input" id="store-search" placeholder='Search games and more' autocomplete="off">
-            </div>
-            <div class="store-categories">
-                <div class="store-cat">
-                    <h2>Store</h2>
-                    <div class="sub-cat">
-                        <li class="sub-cat-li" id="span-1">
-                            Browse games
-                            <img src="images/arrow.svg" alt="">
-                        </li>
-                        <span class="sub-cat-span" id="span-1">
-                            <li>
-                                <a href="">
-                                    EA games
-                                </a>
+        <div class="store-container">
+            <div class="store-panel">
+                <div class="store-logo">
+                    <img src="images/shopping-logo.png" alt="">
+                </div>
+                <div class="store-search">
+                    <button class="store-search-btn" aria-label="search button"><img src="images/search-btn.png" alt=""></button>
+                    <input type="text" class="store-search-input" id="store-search" placeholder='Search games and more' autocomplete="off">
+                </div>
+                <div class="store-categories">
+                    <div class="store-cat">
+                        <h2>Store</h2>
+                        <div class="sub-cat">
+                            <li class="sub-cat-li" id="span-1">
+                                Browse games
+                                <img src="images/arrow.svg" alt="">
                             </li>
-                            <li>
-                                <a href="">
-                                    Steam
-                                </a>
+                            <span class="sub-cat-span" id="span-1">
+                                <li>
+                                    <a href="">
+                                        EA games
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Steam
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        other
+                                    </a>
+                                </li>
+                            </span>
+                        </div>
+                        <div class="sub-cat">
+                            <li class="sub-cat-li" id="span-2">
+                                Details
+                                <img src="images/arrow.svg" alt="">
                             </li>
-                            <li>
-                                <a href="">
-                                    other
-                                </a>
-                            </li>
-                        </span>
+                            <span class="sub-cat-span" id="span-2">
+                                <li>
+                                    <a href="">
+                                        on sale
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        under $10
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        $10- $20
+                                    </a>
+                                </li>
+                            </span>
+                        </div>
                     </div>
-                    <div class="sub-cat">
-                        <li class="sub-cat-li" id="span-2">
-                            Details
-                            <img src="images/arrow.svg" alt="">
-                        </li>
-                        <span class="sub-cat-span" id="span-2">
-                            <li>
-                                <a href="">
-                                    on sale
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    under $10
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    $10- $20
-                                </a>
-                            </li>
-                        </span>
+                    <div class="extra-cat">
+                        <a href="">
+                            Consoles <img src="images/arrow.svg" alt="" />
+                        </a>
+                    </div>
+                    <div class="extra-cat">
+                        <a href="">
+                            Gaming clients <img src="images/arrow.svg" alt="" />
+                        </a>
                     </div>
                 </div>
-                <div class="extra-cat">
-                    <a href="">
-                        Consoles <img src="images/arrow.svg" alt="" />
-                    </a>
-                </div>
-                <div class="extra-cat">
-                    <a href="">
-                        Gaming clients <img src="images/arrow.svg" alt="" />
-                    </a>
+                <div class="store-footer">
+                    <ul>
+                        <li>
+                            <a href="">About</a>
+                        </li>
+                        <li>
+                            <a href="">Download</a>
+                        </li>
+                        <li>
+                            <a href="">Help</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="store-footer">
-                <ul>
-                    <li>
-                        <a href="">About</a>
-                    </li>
-                    <li>
-                        <a href="">Download</a>
-                    </li>
-                    <li>
-                        <a href="">Help</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="store-content">
-            <div class="section-1-store">
-                <div class="title-sec-store">
-                    <h2>On sale <span>View all</span></h2>
+            <div class="store-content">
+                <div class="section-1-store">
+                    <div class="title-sec-store">
+                        <h2>On sale <span> <a href="">View all</a> </span></h2>
+                    </div>
+
+                    <div class="store-swiper swiper-container">
+                        <div class="store-swiper-wrapper swiper-wrapper">
+                            <div class="store-game swiper-slide">
+                                <img src="images/store/madden21.jpg" alt="">
+                                <div class="block-additional">
+                                    <span> 
+                                        <a href="">
+                                            Learn more
+                                        </a> 
+                                    </span>
+                                    <span>Add to wishlist</span>
+                                </div>
+                                <h2>Madden NFL 21 superstar edition </h2>
+                                <div class="prices-store">
+                                    <span class="price">$ 24.99</span>
+                                    <span class="save-price">
+                                        Save 69% 
+                                        <span>$79.99</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="store-game swiper-slide">
+                                <img src="images/store/fifa.jpg" alt="">
+                                <div class="block-additional">
+                                    <span> 
+                                        <a href="">
+                                            Learn more
+                                        </a> 
+                                    </span>
+                                    <span>Add to wishlist</span>
+                                </div>
+                                <h2>Fifa 21 Champions edition</h2>
+                                <div class="prices-store">
+                                    <span class="price">$ 29.99</span>
+                                    <span class="save-price">
+                                        Save 63% 
+                                        <span>$79.99</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="store-game swiper-slide">
+                                <img src="images/store/MXGP2020.jpg" alt="">
+                                <div class="block-additional">
+                                    <span> 
+                                        <a href="">
+                                            Learn more
+                                        </a> 
+                                    </span>
+                                    <span>Add to wishlist</span>
+                                </div>
+                                <h2>MXGP 2020</h2>
+                                <div class="prices-store">
+                                    <span class="price">$ 23.99</span>
+                                    <span class="save-price">
+                                        Save 40% 
+                                        <span>$39.99</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="store-game swiper-slide">
+                                <img src="images/store/ride4.jpg" alt="">
+                                <div class="block-additional">
+                                    <span> 
+                                        <a href="">
+                                            Learn more
+                                        </a> 
+                                    </span>
+                                    <span>Add to wishlist</span>
+                                </div>
+                                <h2>Ride 4</h2>
+                                <div class="prices-store">
+                                    <span class="price">$ 19.99</span>
+                                    <span class="save-price">
+                                        Save 50% 
+                                        <span>$39.99</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="store-game swiper-slide">
+                                <img src="images/store/IronConflict.jpg" alt="">
+                                <div class="block-additional">
+                                    <span> 
+                                        <a href="">
+                                            Learn more
+                                        </a> 
+                                    </span>
+                                    <span>Add to wishlist</span>
+                                </div>
+                                <h2>Iron Conflict</h2>
+                                <div class="prices-store">
+                                    <span class="price">$ 19.99</span>
+                                    <span class="save-price">
+                                        Save 67% 
+                                        <span>$59.99</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="store-game swiper-slide">
+                                <img src="images/posters/brekingbad.jpg" alt="">
+                                <div class="block-additional">
+                                    <span> 
+                                        <a href="">
+                                            Learn more
+                                        </a> 
+                                    </span>
+                                    <span>Add to wishlist</span>
+                                </div>
+                                <h2>Breaking Bad</h2>
+                                <div class="prices-store">
+                                    <span class="price">$ 29.99</span>
+                                    <span class="save-price">
+                                        Save 63% 
+                                        <span>$79.99</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="store-game swiper-slide">
+                                <img src="images/posters/division.jpg" alt="">
+                                <div class="block-additional">
+                                    <span> 
+                                        <a href="">
+                                            Learn more
+                                        </a> 
+                                    </span>
+                                    <span>Add to wishlist</span>
+                                </div>
+                                <h2>The division 2</h2>
+                                <div class="prices-store">
+                                    <span class="price">$ 29.99</span>
+                                    <span class="save-price">
+                                        Save 63% 
+                                        <span>$79.99</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="store-game swiper-slide">
+                                <img src="images/posters/doom.jpg" alt="">
+                                <div class="block-additional">
+                                    <span> 
+                                        <a href="">
+                                            Learn more
+                                        </a> 
+                                    </span>
+                                    <span>Add to wishlist</span>
+                                </div>
+                                <h2>Doom</h2>
+                                <div class="prices-store">
+                                    <span class="price">$ 29.99</span>
+                                    <span class="save-price">
+                                        Save 63% 
+                                        <span>$79.99</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="store-game swiper-slide">
+                                <img src="images/posters/fifa.jpg" alt="">
+                                <div class="block-additional">
+                                    <span> 
+                                        <a href="">
+                                            Learn more
+                                        </a> 
+                                    </span>
+                                    <span>Add to wishlist</span>
+                                </div>
+                                <h2>Fifa 20</h2>
+                                <div class="prices-store">
+                                    <span class="price">$ 29.99</span>
+                                    <span class="save-price">
+                                        Save 63% 
+                                        <span>$79.99</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="store-game swiper-slide">
+                                <img src="images/posters/prey.jpg" alt="">
+                                <div class="block-additional">
+                                    <span> 
+                                        <a href="">
+                                            Learn more
+                                        </a> 
+                                    </span>
+                                    <span>Add to wishlist</span>
+                                </div>
+                                <h2>Prey</h2>
+                                <div class="prices-store">
+                                    <span class="price">$ 29.99</span>
+                                    <span class="save-price">
+                                        Save 63% 
+                                        <span>$79.99</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="section-1-store">
+                    <div class="title-sec-store">
+                        <h2>Extra content <span> <a href="">View all</a> </span></h2>
+                    </div>
+
+                    <div class="store-swiper swiper-container">
+                        <div class="store-swiper-wrapper swiper-wrapper">
+                            <div class="store-game swiper-slide">
+                                <img src="images/posters/destiny.jpg" alt="">
+                                <h2>Destiny</h2>
+                                <div class="prices-store">
+                                    <span class="price">$ 29.99</span>
+                                    <span class="save-price">
+                                        Save 63% 
+                                        <span>$79.99</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="store-game swiper-slide">
+                                <img src="images/posters/shadow.jpg" alt="">
+                                <h2>Shadow</h2>
+                                <div class="prices-store">
+                                    <span class="price">$ 29.99</span>
+                                    <span class="save-price">
+                                        Save 63% 
+                                        <span>$79.99</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="store-game swiper-slide">
+                                <img src="images/posters/duty.jpg" alt="">
+                                <h2>Call of duty: black ops 2</h2>
+                                <div class="prices-store">
+                                    <span class="price">$ 29.99</span>
+                                    <span class="save-price">
+                                        Save 63% 
+                                        <span>$79.99</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="store-game swiper-slide">
+                                <img src="images/posters/fallout.jpg" alt="">
+                                <h2>Fallout</h2>
+                                <div class="prices-store">
+                                    <span class="price">$ 29.99</span>
+                                    <span class="save-price">
+                                        Save 63% 
+                                        <span>$79.99</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="store-game swiper-slide">
+                                <img src="images/posters/pubg.jpg" alt="">
+                                <h2>Player Unknown`s Battlegrounds</h2>
+                                <div class="prices-store">
+                                    <span class="price">$ 29.99</span>
+                                    <span class="save-price">
+                                        Save 63% 
+                                        <span>$79.99</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="store-game swiper-slide">
+                                <img src="images/posters/brekingbad.jpg" alt="">
+                                <h2>Breaking Bad</h2>
+                                <div class="prices-store">
+                                    <span class="price">$ 29.99</span>
+                                    <span class="save-price">
+                                        Save 63% 
+                                        <span>$79.99</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="store-game swiper-slide">
+                                <img src="images/posters/division.jpg" alt="">
+                                <h2>The division 2</h2>
+                                <div class="prices-store">
+                                    <span class="price">$ 29.99</span>
+                                    <span class="save-price">
+                                        Save 63% 
+                                        <span>$79.99</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="store-game swiper-slide">
+                                <img src="images/posters/doom.jpg" alt="">
+                                <h2>Doom</h2>
+                                <div class="prices-store">
+                                    <span class="price">$ 29.99</span>
+                                    <span class="save-price">
+                                        Save 63% 
+                                        <span>$79.99</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="store-game swiper-slide">
+                                <img src="images/posters/fifa.jpg" alt="">
+                                <h2>Fifa 20</h2>
+                                <div class="prices-store">
+                                    <span class="price">$ 29.99</span>
+                                    <span class="save-price">
+                                        Save 63% 
+                                        <span>$79.99</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="store-game swiper-slide">
+                                <img src="images/posters/prey.jpg" alt="">
+                                <h2>Prey</h2>
+                                <div class="prices-store">
+                                    <span class="price">$ 29.99</span>
+                                    <span class="save-price">
+                                        Save 63% 
+                                        <span>$79.99</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>

@@ -1068,9 +1068,15 @@ footer {
 
 .store {
     position: relative;
-    height: 700px;
+    height: 1030px;
     margin-bottom: 60px;
     background-color: #121212;
+}
+
+.store-container {
+    max-width: 1366px;
+    height: 100%;
+    margin: auto;
 }
 
 .store-panel {
@@ -1161,8 +1167,13 @@ footer {
     display: block;
 }
 
+.sub-cat-span {
+    margin-left: 30px;
+}
+
 .sub-cat-span li {
     margin: 5px;
+    list-style-type: none;
 }
 
 .sub-cat-span li a {
@@ -1234,7 +1245,125 @@ footer {
 }
 
 .store-content {
-    background-color: #fff;
-    width: 60%;
-    margin-right: 5%;
+    padding-top: 50px;
+    width: 98%;
+}
+
+.section-1-store {
+    padding-right: 20px;
+    margin-bottom: 50px;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.title-sec-store h2 {
+    font-size: 36px;
+    font-family: "ubuntu-bold";
+    color: #eaeaea;
+}
+
+.title-sec-store h2 span a {
+    font-size: 17px;
+    color: #bfbfbf;
+    text-decoration: none;
+    transition-duration: 0.2s;
+}
+
+.title-sec-store h2 span a:hover {
+    color: #df3a3a;
+}
+
+.store-swiper {
+    margin-top: 30px;
+}
+
+.store-game {
+    position: relative;
+    overflow: hidden;
+    height: 370px;
+    background-color: #171717;
+    transition: 0.3s;
+}
+
+.store-game:hover {
+    box-shadow: 0 4px 31px rgba(0, 0, 0, 0.4);
+}
+
+.store-game img {
+    width: 100%;
+    height: 240px;
+}
+
+.store-game h2 {
+    font-size: 17px;
+    font-family: "ubuntu-regular";
+    color: #ddd;
+    padding: 10px 20px;
+}
+
+.prices-store {
+    position: absolute;
+    bottom: 0px;
+    padding: 10px 20px;
+}
+
+.price,
+.save-price {
+    display: block;
+}
+
+.price {
+    font-family: "ubuntu-regular";
+    color: #df3a3a;
+}
+
+.save-price {
+    font-family: "ubuntu-regular";
+    color: #e5d430;
+}
+
+.save-price span {
+    text-decoration: line-through;
+    color: #7f7f7f;
+}
+
+.block-additional {
+    position: absolute;
+    width: 100%;
+    height: 240px;
+    background-color: rgba(0, 0, 0, 0.4);
+    top: 0;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.3s;
+}
+
+.store-game:hover .block-additional {
+    opacity: 1;
+}
+
+.block-additional span {
+    display: block;
+    font-family: "ubuntu-regular";
+    color: #fff;
+    background-color: #df3a3a;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.block-additional span:last-child {
+    border: 1px solid#fff;
+    background-color: transparent;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.block-additional span a {
+    font-family: "ubuntu-regular";
+    color: #fff;
+    text-decoration: none;
 }

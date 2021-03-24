@@ -125,3 +125,47 @@ var topGame = new Swiper(".topGame-swiper", {
         },
     },
 });
+
+var store = new Swiper(".store-swiper", {
+    speed: 400,
+    initialSlide: 0,
+    autoHeight: false,
+    direction: "horizontal",
+    loop: false,
+    autoplay: 0,
+    navigation: {
+        nextEl: ".next",
+        prevEl: ".prew",
+    },
+    effect: "slide",
+    spaceBetween: 40,
+    slidesPerView: 5,
+    centeredSlides: false,
+    slidesOffsetBefore: 0,
+    grabCursor: true,
+    breakpoints: {
+        1020: {
+            spaceBetween: 20,
+        },
+        900: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+        },
+        780: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+        },
+        680: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+        },
+        520: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+        },
+        500: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+        },
+    },
+});
